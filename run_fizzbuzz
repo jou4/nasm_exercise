@@ -1,0 +1,5 @@
+#! /bin/bash
+
+nasm -f macho64 fizzbuzz.s
+gcc -o fizzbuzz fizzbuzz.o
+./fizzbuzz
