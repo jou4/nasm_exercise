@@ -1,6 +1,6 @@
 #! /bin/bash
 
-nasm -f macho64 fizzbuzz.s
-nasm -f macho64 util.s
-gcc -o fizzbuzz fizzbuzz.o util.o
-./fizzbuzz
+nasm -o test.o -f macho64 fizzbuzz.s
+nasm -o util.o -f macho64 util.s
+gcc -o test test.o util.o
+./test

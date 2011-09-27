@@ -1,6 +1,7 @@
 #! /bin/bash
 
-nasm -o test.o -f macho64 print.s
+nasm -o test.o -f macho64 data.s
 nasm -o util.o -f macho64 util.s
 gcc -o test test.o util.o
 ./test
+

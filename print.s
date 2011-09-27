@@ -1,7 +1,7 @@
 ; nasm -f macho64 print.s
 ; nasm -f macho64 util.s
-; gcc -o print print.o util.o
-; ./print
+; gcc -o test print.o util.o
+; ./test
 
 extern _printf
 

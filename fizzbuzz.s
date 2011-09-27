@@ -1,8 +1,8 @@
 ; nasm -f macho64 fizzbuzz.s
 ; nasm -f macho64 util.s
-; gcc -o fizzbuzz fizzbuzz.o util.o
-; ./fizzbuzz
-; ./fizzbuzz 100
+; gcc -o test fizzbuzz.o util.o
+; ./test
+; ./test 100
 
 extern _printf
 extern _atoi
